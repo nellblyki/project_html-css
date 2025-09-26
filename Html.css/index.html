@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="shapka">
+            <p>Sign up and get 20% off to your first order.</p> <a href=""> Sign Up Now</a>
+        </div>
+        <div class="podshapka">
+            <h2>SHOP.CO</h2>
+            <div class="podhapkashapki">
+                <P>Shop</P>
+                <p>On Sale</p>
+                <p>New Arrivals</p>
+                <p>Brands</p> 
+            </div>
+            <div class="kaha">
+                <div class="search-container">
+                    <img src="assets/img's/lupa.svg" alt="">
+                    <input type="text" placeholder="Search for products..." class="search-bar">
+                </div>
+                <img src="assets/img's/Frame 5.svg" alt="">
+            </div>
+            </div>
+    </header>
+    
+    <!-- Модальное окно регистрации/авторизации -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login">Вход</button>
+                <button class="tab-btn" data-tab="register">Регистрация</button>
+            </div>
+            <div id="userInfo" style="display: none;">
+                <h2>Добро пожаловать, <span id="userName"></span>!</h2>
+                <button id="logoutBtn" class="auth-button">Выйти</button>
+            </div>
+            <form id="loginForm" class="auth-form active">
+                <h2>Вход в аккаунт</h2>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+
+            <form id="registerForm" class="auth-form">
+                <h2>Регистрация</h2>
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="password" placeholder="Подтвердите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="baba">
+            <div class="ag">
+                <h2>FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
+            </div>
+            <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your
+                individuality and cater to your sense of style.</p>
+            <a class="shopnow" href="#">
+                <div class="shop">
+                    <p>Shop now</p>
+                </div>
+            </a>
+            <div class="numbers">
+                <div>
+                    <h2 class="tsifri">200+</h2>
+                    <p>International Brands</p>
+                </div>
+                <div>
+                    <h2 class="tsifri">2,000+</h2>
+                    <p>High-Quality Products</p>
+                </div>
+                <div class="happycust">
+                    <h2 class="tsifri">30,000+</h2>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+        </div>
+        <img class="cartinka" src="assets/img's/hero_img.jpg" alt="">
+    </div>
+    <div class="logos">
+        <img src="assets/img's/versace.svg" alt="">
+        <img src="assets/img's/zara-logo-1 1.svg" alt="">
+        <img src="assets/img's/gucci-logo-1 1.svg" alt="">
+        <img src="assets/img's/ck logo.svg" alt="">
+    </div>
+    <main>
+        <div class="x">
+            <h2>NEW ARRIVALS</h2>
+        </div>
+        <div class="images">
+            <div>
+                <img src="assets/img's/tblack.svg" alt="">
+                <p>T-SHIRT WITH TAPE DETAILS</p>
+                <div class="rait">
+                    <div class="rait_stars">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 5.svg" alt="">
+                    </div>             
+                    <p>4.5/5</p>
+                    
+                </div>
+                <p>$120</p>
+            </div>
+            <div>
+                <img src="assets/img's/jeans.svg" alt="">
+                <p>SKINNY FIT JEANS</p>
+                <div class="rait">
+                    <div class="rait_stars">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 5.svg" alt="">
+                    </div>             
+                    <p>3.5/5</p>
+                    
+                </div>
+                <div class="cost">
+                    <p>$240</p>
+                    <p class="sale">$260</p>
+                    <div class="procent"><p>-20%</p></div>
+                </div>
+            </div>
+            <div class="deletecard">
+                <img src="assets/img's/shirt.svg" alt="">
+                <p>CHECKERED SHIRT</p>
+                <div class="rait">
+                    <div class="rait_stars">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 5.svg" alt="">
+                    </div>             
+                    <p>4.5/5</p>
+                    
+                </div>
+                <p>$180</p>
+            </div>
+            <div class="deletecard">
+                <img src="assets/img's/tred.svg" alt="">
+                <p>SLEEVE STRIPED T-SHIRT</p>
+                <div class="rait">
+                    <div class="rait_stars">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 5.svg" alt="">
+                    </div>             
+                    <p>4.5/5</p>
+                    
+                </div>
+                <div class="cost">
+                    <p>$130</p>
+                    <p class="sale">$160</p>
+                    <div class="procent"><p>-30%</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="bat">
+            <div class="but"><p>View All</p></div>
+        </div>
+
+
+
+
+
+
+
+        <div class="x">
+            <h2>TOP SELLING</h2>
+        </div>
+        <div class="images">
+            <div>
+                <img src="assets/img's/greenshirt.jpg" alt="">
+                <p>VERTICAL STRIPED SHIRT</p>
+                <div class="rait">
+                    <div class="rait_stars">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                    </div>             
+                    <p>5.0/5</p>
+                    
+                </div>
+                <div class="cost">
+                    <p>$212</p>
+                    <p class="sale">$232</p>
+                    <div class="procent"><p>-20%</p></div>
+                </div>
+            </div>
+            <div>
+                <img src="assets/img's/orshitr.jpg" alt="">
+                <p>COURAGE GRAPHIC T-SHIRT</p>
+                <div class="rait">
+                    <div class="rait_stars">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                    </div>             
+                    <p>4.0/5</p>  
+                </div>
+                <div class="cost">
+                    <p>$145</p>
+                </div>
+            </div>
+            <div class="deletecard">
+                <img src="assets/img's/shortsj.jpg" alt="">
+                <p>LOOSE FIT BERMUDA SHORTS</p>
+                <div class="rait">
+                    <div class="rait_stars">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                    </div>             
+                    <p>3.0/5</p>                   
+                </div>
+                <p>$80</p>
+            </div>
+            <div class="deletecard">
+                <img src="assets/img's/blackjeans.jpg" alt="">
+                <p>SLEEVE STRIPED T-SHIRT</p>
+                <div class="rait">
+                    <div class="rait_stars">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 1.svg" alt="">
+                        <img src="assets/img's/Star 5.svg" alt="">
+                    </div>             
+                    <p>4.5/5</p>
+                    
+                </div>
+                <div class="cost">
+                    <p>$210</p>
+                </div>
+            </div>
+        </div> 
+        <div class="bat">
+            <div class="but"><p>View All</p></div>
+        </div>
+        <div class="styles">
+            <div class="x">
+                <h2>BROWSE BY DRESS STYLE</h2>
+            </div>
+            <div class="blocs">
+                <a href="#" class="cartone">
+                    <img src="assets/img's/casual_bg.png" alt="">
+                    <span>Casual</span>
+                </a>
+                <a href="#" class="carttwo">
+                    <img src="assets/img's/formal_bg.png" alt="">
+                    <span>Formal</span>
+                </a>
+            </div>
+
+            <div class="blocs">
+                <a href="#" class="carttwo">
+                    <img src="assets/img's/party.jpg" alt="">
+                    <span>Party</span>
+                </a>
+                <a href="#" class="cartone">
+                    <img src="assets/img's/gymw.jpg" alt="">
+                    <span>Gym</span>
+                </a>
+            </div>
+           
+        </div>
+        <div class="otziv">
+            <div class="naz">
+                <h2>OUR HAPPY CUSTOMERS</h2>
+                <div>
+                    <img src="assets/img's/arrow-down-bold 2.svg" alt="">
+                    <img src="assets/img's/arrow-down-bold 1.svg" alt="">
+                </div>
+            </div>
+            <div class="cartiotziv">
+                <div class="saraha">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>Sarah.M.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="saraha">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>Sarah.M.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="saraha">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>Sarah.M.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="sarah">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>Alex K.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co.
+                                 The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+                            </p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="sarahh">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>James L.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>
+                                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. 
+                                The selection of clothes is not only diverse but also on-point with the latest trends.”
+                            </p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="sarahh">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>James L.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>
+                                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. 
+                                The selection of clothes is not only diverse but also on-point with the latest trends.”
+                            </p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="sarahh">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>James L.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>
+                                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. 
+                                The selection of clothes is not only diverse but also on-point with the latest trends.”
+                            </p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="sarahh">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>James L.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>
+                                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. 
+                                The selection of clothes is not only diverse but also on-point with the latest trends.”
+                            </p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="sarahh">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>James L.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>
+                                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. 
+                                The selection of clothes is not only diverse but also on-point with the latest trends.”
+                            </p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                <div class="sarahh">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>James L.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>
+                                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. 
+                                The selection of clothes is not only diverse but also on-point with the latest trends.”
+                            </p>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+
+                <div class="saraha">
+                    <div class="ooo">
+                        <div class="starsa">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                            <img src="assets/img's/Star 1.svg" alt="">
+                        </div>
+                        <div class="bb">
+                            <p>Sarah.M.</p>
+                            <img src="assets/img's/Vector.svg" alt="">
+                        </div>
+                        <div class="pp">
+                            <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                        </div>
+        
+                    </div>
+                    <div class="saraha">
+                        <div class="ooo">
+                            <div class="starsa">
+                                <img src="assets/img's/Star 1.svg" alt="">
+                                <img src="assets/img's/Star 1.svg" alt="">
+                                <img src="assets/img's/Star 1.svg" alt="">
+                                <img src="assets/img's/Star 1.svg" alt="">
+                                <img src="assets/img's/Star 1.svg" alt="">
+                            </div>
+                            <div class="bb">
+                                <p>Sarah.M.</p>
+                                <img src="assets/img's/Vector.svg" alt="">
+                            </div>
+                            <div class="pp">
+                                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>       
+    </main>
+    <footer>
+        <div class="mail">
+            <div class="textmail"><h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            </div>
+            <form>
+                <div>
+                    <input class="entermail" type="text"
+                    placeholder="Enter your email address"
+                    >
+                    <a href="#">
+                        <div class="podmail">
+                            <p>Subscribe to Newsletter</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </form>
+           
+        </div>
+        <div class="podval">
+            <div class="firststolb">
+                <h2>SHOP.CO</h2>
+                <p>We have clothes that suits your style and which you're proud to wear. From women to men.</p>
+                <img src="assets/img's/Social.svg" alt="">
+            </div>
+            <div class="stolbi">
+                <div class="twostolb">
+                    <h2>COMPANY</h2>
+                    <p>About</p>
+                    <p>Features</p>
+                    <p>Works</p>
+                    <p>Career</p>
+                </div>
+                <div class="threestolb">
+                    <h2>HELP</h2>
+                    <p>Customer Support</p>
+                    <p>Delivery Details</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="fourstolb">
+                    <h2>FAQ</h2>
+                    <p>Account</p>
+                    <p>Manage Deliveries</p>
+                    <p>Orders</p>
+                    <p>Payments</p>
+                </div>
+                <div class="fivestolb">
+                    <h2>RESOURSES</h2>
+                    <p>Free eBooks</p>
+                    <p>Devolopment Tutorial</p>
+                    <p>How to do- Blog</p>
+                    <p>Youtube Playlist</p>
+                </div>
+            </div>
+           
+        </div>
+        <div class="lastpodval">
+            <p> Shop.co © 2000-2021, All rights reserved</p>
+            <img src="assets/img's/paycards.svg" alt="">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
